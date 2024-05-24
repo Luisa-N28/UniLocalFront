@@ -1,0 +1,121 @@
+.createMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+  }
+  
+  .createContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin-top: 20px;
+    padding: 100px;
+    background-color: #f1f1f1;
+    border-radius: 50px;
+  }
+  
+  .newTitle {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  
+  .createForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 50px;
+  }
+  
+  .multiContainer {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: center;
+    padding: 30px 0;
+    border-radius: 30px;
+  }
+  
+  .scheduleList {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .scheduleList > div {
+    display: flex;
+  }
+  
+  .timeContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  
+  .timeContainer label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    margin: 0 20px;
+  }
+  
+  .timeContainer input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 20px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 200;
+  }
+  
+  .mapContainer {
+    height: 200px;
+  }
+  
+  #mapa {
+    height: 100%;
+  }
+  
+  .locationContainer {
+    margin: 20px 0;
+  }
+  
+  .imagesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #e23d7f;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .imagesContainer input[type="file"] {
+    display: none;
+  }
+  
+  .imagesLabel {
+    font-size: 14px;
+    color: #e23d7f;
+    padding: 10px;
+    cursor: pointer;
+  }
+  

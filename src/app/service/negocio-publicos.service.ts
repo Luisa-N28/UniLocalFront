@@ -4,6 +4,7 @@ import { MensajeDTO } from '../dto/mensaje-dto';
 import { HttpClient } from '@angular/common/http';
 import { ItemNegocioDTO } from '../dto/item-negocio-dto';
 import { BuscarNegocioDTO } from '../dto/buscar-negocio-dto';
+import { Ubicacion } from '../dto/ubicacion';
 
 @Injectable({
   providedIn: 'root'

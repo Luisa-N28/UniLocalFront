@@ -1,0 +1,148 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#mapa {
+  width: 90%;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.searchInput {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.searchInput input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button[mat-fab] {
+  background-color: #3d58cd;
+}
+
+button[mat-fab] mat-icon {
+  font-size: 24px;
+}
+
+.businessMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.businessMainContainer > h1 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.businessContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+.businessCard {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 350px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.businessCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imageContainer {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.imageContainer > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.businessCard h2 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.businessCard p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.businessCard .businessType {
+  color: #3d58cd;
+}
+
+.businessCard .businessRating {
+  color: #e73c7e;
+}
+
+button[mat-flat-button] {
+  margin-top: auto;
+  background-color: #3d58cd;
+  color: #fff;
+}
+
+.signUpLink {
+  text-decoration: none;
+  color: #3715bd;
+  text-align: center;
+  padding-top: 5px;
+  transition: .5s all;
+}
+
+.signUpLink:hover {
+  transform: translate(1px, -1px);
+  color: #3d58cd;
+}

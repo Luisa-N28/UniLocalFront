@@ -40,6 +40,43 @@ export class TokenService {
     const payloadDecoded = Buffer.from(payload, 'base64').toString('ascii');
     const values = JSON.parse(payloadDecoded);
     return values;
+  }
+
+  public getCodigo(): string {
+    const token = this.getToken();
+    if (token) {
+      const values = this.decodePayload(token);
+      return values.id;
     }
+    return "";
+  }
+
+  public getEmail(): string {
+    const token = this.getToken();
+    if (token) {
+      const values = this.decodePayload(token);
+      return values.sub;
+    }
+    return "";
+  }
+
+  public getRole(): string {
+    const token = this.getToken();
+    if (token) {
+      const values = this.decodePayload(token);
+      return values.rol;
+    }
+    return "";
+  }
+
+
+  public loginModerador(token: string) {
+    this.setToken(token);
+    this.router.navigate(["/vista-moderador"]).then(() => {
+      window.location.reload();
+    });
+  }
+
+  
 }
 

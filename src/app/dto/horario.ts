@@ -1,11 +1,13 @@
+import { DayOfWeek } from "./day-of-week";
+
 export class Horario {
     horaInicio: number;
     horaFin: number;
-    dia: DayOfWeek;
+    dayOfWeek: DayOfWeek;
 
-    constructor() { ;
-    this.horaInicio = 0
-    this.horaFin = 0;
-    this.dia = { ordinal: 1, name: "LUNES" };
+    constructor(horaInicio:number, horaFin: number, dayOfWeek: DayOfWeek) { ;
+    this.horaInicio = horaInicio;
+    this.horaFin = horaFin;
+    this.dayOfWeek= dayOfWeek;
     }
 }

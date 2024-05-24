@@ -1,0 +1,30 @@
+<app-guest-header/>
+<main>
+  <form role="search" (submit)="iraBusqueda(textoBusqueda.value)" class="formSearch">
+    <div class="searchInput">
+      <input #textoBusqueda type="search" placeholder="Buscar..." aria-label="Search">
+    </div>
+    <button type="submit" mat-fab color="primary">
+      <mat-icon>search</mat-icon>
+    </button>
+  </form>
+  <div id="mapa"></div>
+  <div class="businessMainContainer">
+    <h1>Últimos negocios disponibles</h1>
+
+    <div class="businessContainer">
+      <div *ngFor="let item of business; trackBy: trackByIndex" class="businessCard">
+        <div class="imageContainer">
+          <img [src]="item.fotoPrimera" alt="{{item.nombre}}">
+        </div>
+        <h2>{{item.nombre}}</h2>
+        <p class="businessType">Tipo: {{item.tipoNegocio}}</p>
+        <p class="businessRating">Calificación promedio: {{item.puntuacion}}</p>
+        <a href="/business-view/{{item.codigoNegocio}}">
+          <button mat-flat-button color="primary">Ver negocio</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+<app-footer/>

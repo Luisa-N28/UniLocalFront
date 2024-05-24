@@ -1,0 +1,24 @@
+<header class="headerContainer">
+  <div class="headerImageContainer">
+    
+  </div>
+
+    <nav class="navComponent">
+      @if (isLogged) {
+        <ul class="navList">
+          <li class="listItem"><a routerLink="/my-business">Mis negocios</a></li>
+          <li class="listItem"><a routerLink="/favorites">Favoritos</a></li>
+          <li class="listItem"><a routerLink="/my-profile"><button mat-flat-button color="primary">Mi perfil</button></a></li>
+          <li class="listItem"><a routerLink=""><button (click)="logout()" mat-button color="accent"><mat-icon>logout</mat-icon></button></a></li>
+        </ul>
+
+      } @else {
+        <ul class="navListNotLogged">
+          <li class="listItem"><a routerLink="/login"><button mat-flat-button color="primary">Iniciar Sesión</button></a></li>
+          <li class="listItem"><a routerLink="/registro"><button mat-stroked-button color="accent">Regístrate</button></a></li>
+        </ul>
+      }
+      
+    </nav>
+  
+</header>

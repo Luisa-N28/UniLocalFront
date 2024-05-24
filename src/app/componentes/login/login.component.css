@@ -1,0 +1,136 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3715bd;
+  background: linear-gradient(45deg, #ee52c2, #e73c7e, #3d58cd, #3715bd);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.loginFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.formContainer {
+  width: 100%;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #3715bd;
+  margin-bottom: 20px;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  color: #3d58cd;
+  font-weight: bold;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #3715bd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.loginButton:hover {
+  background-color: #3d58cd;
+}
+
+.signUpLink {
+  text-decoration: none;
+  color: #3715bd;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  transition: color 0.3s;
+}
+
+.signUpLink:hover {
+  color: #3d58cd;
+}
+.buttonContainer {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.signUpButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3d58cd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.signUpButton:hover {
+  background-color: #3715bd;
+}
+
+.buttonContainer button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3d58cd; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttonContainer button:hover {
+  background-color: #3715bd; /* Cambio de color al pasar el cursor sobre el botón */
+}
+

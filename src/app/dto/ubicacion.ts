@@ -1,9 +1,10 @@
-class Ubicacion {
-    private longitud: number;
-    private latitud: number;
-
-    constructor() {
-        this.longitud = 0;
-        this.latitud = 0;
+export class Ubicacion {
+    latitud: number;
+    longitud: number;
+    constructor(latitud: number, longitud: number) {
+      this.latitud = latitud;
+      this.longitud = longitud;
+      
     }
-}
+   
+  }

@@ -1,0 +1,78 @@
+<app-guest-header/>
+
+<main class="myBusinessMain">
+  <div class="myBusinessContainer">
+    <h1 class="businessTitle">Mis Negocios</h1>
+    <div class="businessContainer">
+      @if (negociosArchivados.length > 0) {
+        @for (negocio of negociosArchivados; track $index) {
+          <div class="business-card">
+            <div class="business-image-container">
+              <img src={{negocio.fotoPrimera}} alt="imagen negocio">
+            </div>
+            <div>
+  
+              <h2 class="business-name">{{negocio.nombre}}</h2>
+            <p class="business-body-item">{{negocio.tipoNegocio}}</p>
+            <p class="business-body-item">{{negocio.descripcion}}</p>
+            <p class="business-body-item">Calificación promedio: {{negocio.puntuacion}}</p>
+            <p class="business-body-item">{{negocio.tipoNegocio}}</p>
+            <a routerLink="/vista-negocio/{{negocio.codigo}}">
+              Ver negocio
+            </a>
+  
+            </div>
+            
+            <div class="buttonContainer">
+              
+              <a routerLink="/edit-business/{{negocio.codigo}}">
+                <button mat-flat-button color="accent">Editar negocio</button>
+              </a>
+            </div>
+            <button (click)="deleteBusiness(negocio.codigo)" mat-fab color="warn"><mat-icon>delete</mat-icon></button>
+           
+  
+  
+          </div>
+        }
+        
+
+
+      }
+      @if (negocios.length > 0) {
+        @for (negocio of negocios; track $index) {
+          <div class="business-card">
+            <div class="business-image-container">
+              <img src={{negocio.fotoPrimera}} alt="imagen negocio">
+            </div>
+            <div>
+  
+              <h2 class="business-name">{{negocio.nombre}}</h2>
+            <p class="business-body-item">{{negocio.tipoNegocio}}</p>
+            <p class="business-body-item">{{negocio.descripcion}}</p>
+            <p class="business-body-item">Calificación promedio: {{negocio.puntuacion}}</p>
+            <p class="business-body-item">{{negocio.tipoNegocio}}</p>
+            <a routerLink="/business-view/{{negocio.codigo}}">
+              Ver negocio
+            </a>
+  
+            </div>
+            
+          
+            <button (click)="deleteBusiness(negocio.codigo)" mat-fab color="warn"><mat-icon>delete</mat-icon></button>
+           
+  
+  
+          </div>
+          
+        }
+
+      }
+      
+    </div>
+  </div>
+
+  
+</main>
+
+<app-footer/>

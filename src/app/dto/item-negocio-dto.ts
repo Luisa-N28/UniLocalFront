@@ -1,4 +1,5 @@
 import { TipoNegocio } from "./tipo-negocio";
+import { Ubicacion } from "./ubicacion";
 
 export class ItemNegocioDTO {
     constructor(

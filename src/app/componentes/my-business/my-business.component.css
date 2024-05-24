@@ -1,0 +1,90 @@
+.myBusinessMain{
+  padding: 60px 90px;
+}
+
+.myBusinessContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.businessTitle{
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+.tool-container{
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 999px;
+ 
+  margin: 50px 0;
+}
+.tool-container > a{
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+}
+
+.tool-container > button{
+  margin: 0 10px;
+}
+
+a{
+  text-decoration: none;
+  color: #3715bd;
+
+}
+
+.businessContainer{
+  background-color: #f8f8f8;
+  padding: 60px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.business-card{
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 5px;
+  width: 35%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.business-image-container{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+img{
+  width: 100%;
+}
+
+.buttonContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.buttonContainer > a{
+  text-decoration: none;
+  color: #fff;
+  margin: 5px;
+  
+}

@@ -2,20 +2,22 @@ import EstadoNegocio from "./estado-negocio";
 import { HistorialRevision } from "./historial-revision-dto";
 import { Horario } from "./horario";
 import { TipoNegocio } from "./tipo-negocio";
+import { Ubicacion } from "./ubicacion";
+
 
 export class ActualizarNegocioDTO {
     constructor(
         public codigo: string = '',
-        public ubicacion: Ubicacion | null = null,
+        public ubicacion: Ubicacion,
         public codigoUsuario: string = '',
         public nombre: string = '',
         public descripcion: string = '',
         public horarios: Horario[] = [],
         public imagenes: string[] = [],
-        public tipoNegocio: TipoNegocio | null = null,
-        public telefonos: string[] = [],
-        public estadoNegocio: EstadoNegocio | null = null,
-        public historialRevision: HistorialRevision[] | null = null
+        public tipoNegocio: TipoNegocio,
+        public telefonos: string[],
+        public estadoNegocio: EstadoNegocio,
+        public historialRevision: HistorialRevision
 
     ) { }
 }

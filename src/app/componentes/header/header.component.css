@@ -1,0 +1,32 @@
+.headerContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.headerImageContainer{
+  width: 6%;
+}
+
+.headerImage{
+  width: 100%;
+}
+
+.navList{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.navListLogged{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 300px;
+
+}
+
+.navComponent{
+  width: 30%;
+}

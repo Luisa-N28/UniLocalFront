@@ -1,0 +1,18 @@
+<div class="loginContainer">
+  <div class="loginFormContainer">
+    <form #f="ngForm" class="loginForm" (ngSubmit)="login()">
+      <h1>Iniciar Sesión</h1>
+      <div class="inputGroup">
+        <label for="email">Correo Electrónico</label>
+        <input matInput placeholder="guest@example.com" type="email" id="email" name="email" required
+          [(ngModel)]="sessionDTO.email">
+      </div>
+      <div class="inputGroup">
+        <label for="password">Contraseña</label>
+        <input matInput type="password" id="password" name="password" required [(ngModel)]="sessionDTO.password">
+      </div>
+      <button mat-flat-button color="primary" [disabled]="f.invalid" class="loginButton" (click)="login()">Iniciar
+        Sesión</button>
+    </form>
+  </div>
+</div>

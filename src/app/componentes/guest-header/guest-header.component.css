@@ -1,0 +1,57 @@
+.headerContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.headerImageContainer{
+  width: 6%;
+}
+
+.headerImage{
+  width: 100%;
+}
+
+.navList{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.navListNotLogged{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 70%;
+  margin: 0 auto;
+
+
+}
+
+.navListLogged{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 100%px;
+
+}
+li{
+  list-style-type: none;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: #3715bd;
+  transition: all .3s;
+}
+a:hover{
+  color: #e23d7f;
+
+  
+}
+
+.navComponent{
+  width: 35%;
+}

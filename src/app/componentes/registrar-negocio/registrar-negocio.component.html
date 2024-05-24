@@ -1,1 +1,80 @@
-<p>registrar-negocio works!</p>
+<app-guest-header/>
+<main class="createMain">
+    <div class="createContainer">
+      <h1 class="newTitle">Nuevo negocio</h1>
+      <form #f="ngForm" class="createForm">
+        <div class="imagesContainer">
+          <label class="imagesLabel" for="images">Haz click para seleccionar imágenes</label>
+          <input id="images" type="file" multiple name="imagenes" (change)="agregarImagenes($event)">
+          <button type="button" class="customButton" (click)="subirImagen()">Guardar Imágenes</button>
+        </div>
+        
+        <div class="customFormField">
+          <label>Nombre del negocio</label>
+          <input type="text" placeholder="Nombre del negocio" 
+          #nombre="ngModel" name="nombre"
+          [(ngModel)]="registroNegocioDTO.nombre" required>
+        </div>
+  
+        <div class="customFormField">
+          <label>Descripción</label>
+          <textarea 
+          #descripcion="ngModel" 
+          name="descripcion"
+          [(ngModel)]="registroNegocioDTO.descripcion" required></textarea>
+        </div>
+  
+        <div class="customFormField">
+          <label>Tipo</label>
+          <select name="tipo" [(ngModel)]="registroNegocioDTO.tipoNegocio">
+            <option value="BAR">Panadería</option>
+            <option value="HOTEL">Hotel</option>
+            <option value="CAFETERIA">Cafetería</option>
+            <option value="RESTAURANTE">Restaurante</option>
+            <option value="COMIDARAPIDA">Restaurante</option>
+            <option value="MUSEO">Museo</option>
+          </select>
+        </div>
+       
+  
+        <div class="locationContainer">
+          <h2>Ubicación</h2>
+          <div class="mapContainer">
+            <div id="mapa"></div>
+          </div>
+          
+        </div>
+  
+        <h2>Horarios</h2>
+        <div class="multiContainer">
+          
+          <div class="scheduleList">
+            <!-- Tu ciclo for aquí -->
+            <!-- Recuerda cambiar los elementos mat-form-field, mat-label, mat-select, y mat-option por divs adecuados -->
+          </div>
+          <button type="button" class="customButton" (click)="agregarHorario()">Agregar Horario</button>
+        </div>
+  
+        <h2>Teléfonos</h2>
+        <div class="multiContainer">
+         
+          <div class="phoneList">
+            <!-- Tu ciclo for aquí -->
+            <!-- Recuerda cambiar los elementos mat-form-field, mat-label, y mat-input por divs adecuados -->
+          </div>
+          <button type="button" class="customButton" (click)="agregarTelefono()">Agregar Teléfono</button>
+        </div>
+  
+        <div class="buttonContainer">
+          <button type="button" class="customButton" (click)="crearNegocio()" [disabled]="f.invalid">Crear</button>
+          <a routerLink="/my-business">
+            <button type="button" class="customButton">Volver</button>
+          </a>
+         
+        </div>
+      </form>
+      <app-alerta [alerta]="alerta"></app-alerta>
+    </div>
+  </main>
+<app-footer/>
+
